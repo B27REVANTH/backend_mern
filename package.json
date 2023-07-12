@@ -2,12 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https:",
+  "homepage": "http://B27REVANTH.github.io/backend_mern",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon index.js",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +19,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.3.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
-    "valida
+    "validator": "^13.9.0"
+  }
+}
